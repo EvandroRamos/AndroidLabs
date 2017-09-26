@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class StartActivity extends Activity {
     protected static final String ACTIVITY_NAME = "StartActivity";
@@ -33,6 +34,15 @@ public class StartActivity extends Activity {
     protected void onActivityResult(int requestCode, int responseCode, Intent data){
         if(requestCode == 10){
             Log.i(ACTIVITY_NAME, "Returned to StartActivity.onActivityResult");
+            if(responseCode == Activity.RESULT_OK){
+                String messagePassed = data.getStringExtra("Response");
+
+                CharSequence text = messagePassed;
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(this, text, duration);
+                toast.show();
+            }
         }
         startActivity(data);
     }
