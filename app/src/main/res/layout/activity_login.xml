@@ -16,6 +16,7 @@
         android:text="@string/Login" />
 
     <EditText
+        android:id="@+id/LogIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -28,8 +29,15 @@
         android:text="@string/Password" />
 
     <EditText
+        android:id="@+id/textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ButtonLogin" />
 </LinearLayout>
