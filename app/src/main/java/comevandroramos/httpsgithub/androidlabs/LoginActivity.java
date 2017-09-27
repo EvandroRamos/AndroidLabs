@@ -53,6 +53,7 @@ public class LoginActivity extends Activity {
                 "myPreferences", MODE_PRIVATE);
         SharedPreferences.Editor edit = sharedPreferences.edit();
         userInput.setText(sharedPreferences.getString("defaultEmail", "ramo0045@algonquinlive.com"));
+        edit.commit();
     }
     @Override
     protected void onPause() {

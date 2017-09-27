@@ -9,4 +9,8 @@
     <string name="CheckBox">Check box</string>
     <string name="Switch">What does this do?</string>
     <string name="ButtonLogin">Login</string>
+    <string name="Dialogue">Check Box</string>
+    <string name="Dialogue_Title">Press ok to go to the beginning</string>
+    <string name="Dialogue_Positive">OK</string>
+    <string name="Dialogue_Negative">Cancel</string>
 </resources>

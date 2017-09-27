@@ -6,12 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 public class StartActivity extends Activity {
     protected static final String ACTIVITY_NAME = "StartActivity";
-    EditText userInput, passwordInput;
     Button buttonClick;
 
     @Override
@@ -26,7 +24,7 @@ public class StartActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(StartActivity.this, ListItemsActivity.class);
-                onActivityResult(10,10, intent);
+                startActivityForResult(intent, 10);
             }
         });
     }
@@ -44,7 +42,7 @@ public class StartActivity extends Activity {
                 toast.show();
             }
         }
-        startActivity(data);
+        //startActivity(data);
     }
 
     @Override

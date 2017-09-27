@@ -9,4 +9,9 @@
     <string name="RadioButton">Botão de rádio</string>
     <string name="CheckBox">Caixa de seleção</string>
     <string name="Switch">What does this do?</string>
+    <string name="ButtonLogin">Login</string>
+    <string name="Dialogue">Caixa de Seleção</string>
+    <string name="Dialogue_Title">Pressione continuar para voltar ao começo</string>
+    <string name="Dialogue_Positive">Continuar</string>
+    <string name="Dialogue_Negative">Cancelar</string>
 </resources>
