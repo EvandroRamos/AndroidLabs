@@ -42,7 +42,6 @@ public class StartActivity extends Activity {
                 toast.show();
             }
         }
-        //startActivity(data);
     }
 
     @Override

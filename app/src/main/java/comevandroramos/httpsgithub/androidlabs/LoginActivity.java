@@ -20,6 +20,7 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Log.i(ACTIVITY_NAME, "In onCreate()");
+
         userInput = (EditText) findViewById(R.id.LogIn);
         passwordInput = (EditText) findViewById(R.id.textPassword);
         buttonClick = (Button) findViewById(R.id.buttonLogIn);
